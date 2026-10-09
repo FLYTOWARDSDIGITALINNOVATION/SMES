@@ -707,8 +707,8 @@ footer {
 
     .hero-image-v2 {
         justify-content: center !important;
-        order: -1 !important; /* Image on top */
-        margin-bottom: 3rem;
+        order: 1 !important; /* Image below text on mobile */
+        margin-top: 2.5rem;
     }
 
     .hero-title {
@@ -835,9 +835,17 @@ footer {
     }
 }
 
+@media (max-width: 968px) {
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+    }
+}
+
 @media (max-width: 640px) {
     .hero-title {
-        font-size: 2.5rem !important;
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
     }
 
     .btn {
@@ -846,7 +854,15 @@ footer {
     }
 
     .card {
-        padding: 2.5rem 1.5rem !important;
+        padding: 2rem 1.25rem !important;
+    }
+
+    section {
+        padding: 60px 4% 30px !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
     }
 }
 
@@ -856,10 +872,14 @@ footer {
     }
     
     .hero-title {
-        font-size: 2.2rem !important;
+        font-size: 1.9rem !important;
     }
 
     section {
-        padding: 80px 5% 40px !important;
+        padding: 50px 4% 30px !important;
+    }
+
+    .stats-grid-v2 {
+        padding: 2rem 1rem !important;
     }
 }

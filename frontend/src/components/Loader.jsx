@@ -32,7 +32,7 @@ const Loader = () => {
                     <div style={{ textAlign: 'center' }}>
                         <motion.img
                             src={`${import.meta.env.BASE_URL}logo.png`}
-                            alt="Sanju Wind Energy Logo"
+                            alt="Sri Manjunatha Electrical Service Logo"
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.5 }}

@@ -37,11 +37,11 @@ const Contact = () => {
                         <Send size={18} /> Contact Us
                     </span>
                     <h1 className="hero-title" style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '1.5rem', lineHeight: 1.2 }}>
-                        Expert Wind Energy <br />
-                        <span className="gradient-text">Services & Solutions</span>
+                        Sri Manjunatha <br />
+                        <span className="gradient-text">Electrical Service</span>
                     </h1>
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '2rem' }}>
-                        Need professional installation, blade repair, or routine maintenance for your wind turbines? Our certified technical team is ready to ensure your assets perform at their peak.
+                        Need industrial motor servicing, rewinding, or wind turbine generator repairs? Our team is available round-the-clock to fulfill your requirements.
                     </p>
                 </div>
             </section>
@@ -55,7 +55,7 @@ const Contact = () => {
                         <div style={{ marginBottom: '3rem' }}>
                             <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Get in <span className="gradient-text">Touch</span></h2>
                             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', marginBottom: '2.5rem' }}>
-                                Your operational efficiency starts here. Contact Sanju Wind Energy Services today for a consultation or service request.
+                                Contact Sri Manjunatha Electrical Service today for quotes, emergency repairs, or site consultations.
                             </p>
 
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -64,10 +64,11 @@ const Contact = () => {
                                         <Phone size={24} color="var(--primary)" />
                                     </div>
                                     <div>
-                                        <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Phone / WhatsApp</h4>
+                                        <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Phone Numbers</h4>
                                         <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
-                                            <a href="https://wa.me/916352109398" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', textDecoration: 'none' }}>+91 63521 09398</a>
-                                            <a href="tel:9524844917" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', textDecoration: 'none' }}>+91 95248 44917</a>
+                                            <a href="tel:9148494151" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', textDecoration: 'none' }}>+91 91484 94151</a>
+                                            <a href="tel:9902290605" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', textDecoration: 'none' }}>+91 99022 90605</a>
+                                            <a href="tel:9916062960" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', textDecoration: 'none' }}>+91 99160 62960</a>
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +79,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Email Address</h4>
-                                        <a href="mailto:Anand.a@sanjuwindenergy.com" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', textDecoration: 'none', wordBreak: 'break-all' }}>Anand.a@sanjuwindenergy.com</a>
+                                        <a href="mailto:manjunathaelec@gmail.com" style={{ color: 'var(--text-muted)', fontSize: '1.05rem', textDecoration: 'none', wordBreak: 'break-all' }}>manjunathaelec@gmail.com</a>
                                     </div>
                                 </div>
 
@@ -87,8 +88,9 @@ const Contact = () => {
                                         <Clock size={24} color="var(--accent)" />
                                     </div>
                                     <div>
-                                        <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Working Hours</h4>
-                                        <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', margin: 0 }}>Mon–Sat | 9:00 AM – 7:00 PM</p>
+                                        <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Working Hours & GSTIN</h4>
+                                        <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', margin: 0 }}>24/7 Support Available | Round the Clock</p>
+                                        <p style={{ color: 'var(--primary)', fontSize: '0.95rem', fontWeight: 600, marginTop: '4px' }}>GSTIN: 29A0RPM0727K1ZE</p>
                                     </div>
                                 </div>
 
@@ -97,8 +99,11 @@ const Contact = () => {
                                         <MapPin size={24} color="var(--primary)" />
                                     </div>
                                     <div>
-                                        <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Office Address</h4>
-                                        <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', margin: 0, lineHeight: 1.6 }}>Sanju Wind Energy Services,<br />81/2, Gandhi Bazar, Puliankudi Dist.<br />Tenkasi (Tamilnadu)-627855</p>
+                                        <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem', fontWeight: 700 }}>Office & Workshop Address</h4>
+                                        <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', margin: 0, lineHeight: 1.6 }}>
+                                            Oorukere Village & Post, Arpitha Farm House,<br />
+                                            Sira Road, Tumkur – 572106, Karnataka.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -106,9 +111,9 @@ const Contact = () => {
 
                         <div>
                             <h3 style={{ fontSize: '1.8rem', marginBottom: '1.5rem' }}>Why <span className="gradient-text">Choose Us?</span></h3>
-                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+                            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
                                 {whyChooseUs.map((item, idx) => (
-                                    <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: 'var(--bg-white)', padding: '1rem', borderRadius: '10px', boxShadow: 'var(--shadow)', border: '1px solid var(--border)' }}>
+                                    <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: 'var(--bg-white)', padding: '1rem 1.2rem', borderRadius: '12px', boxShadow: 'var(--shadow)', border: '1px solid var(--border)' }}>
                                         {item.icon}
                                         <span style={{ fontWeight: 600, fontSize: '0.95rem' }}>{item.text}</span>
                                     </div>

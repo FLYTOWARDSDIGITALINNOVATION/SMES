@@ -1,7 +1,7 @@
 {
-  "name": "flytowards",
+  "name": "sri-manjunatha-electrical-service",
   "version": "1.0.0",
-  "description": "Premium Sanju Wind Energy Services Platform",
+  "description": "Sri Manjunatha Electrical Service Platform",
   "main": "index.html",
   "scripts": {
     "dev": "vite",

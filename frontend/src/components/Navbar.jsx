@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
         <nav>
             <Link to="/" className="logo">
-                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Sanju Wind Energy Logo" style={{ height: '80px', width: 'auto' }} />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Sri Manjunatha Electrical Service Logo" style={{ height: '80px', width: 'auto' }} />
             </Link>
 
             <div className="menu-icon" onClick={toggleMenu}>
@@ -42,12 +42,17 @@ const Navbar = () => {
                     <Link to="/service" onClick={(e) => toggleDropdown('services', e)}>
                         Services <ChevronDown size={12} strokeWidth={3} className={activeDropdown === 'services' ? 'rotate' : ''} />
                     </Link>
-                    <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'show' : ''}`}>
-                        <li onClick={closeMenu}><Link to="/service/installation">Installation & Maintenance</Link></li>
-                        <li onClick={closeMenu}><Link to="/service/blade-repair">Blade Repair Work</Link></li>
-                        <li onClick={closeMenu}><Link to="/service/rope-access">Rope Access Work</Link></li>
-                        <li onClick={closeMenu}><Link to="/service/hse-safety">HSE Safety Services</Link></li>
-                        <li onClick={closeMenu}><Link to="/service/third-party-inspection">Third Party Inspection</Link></li>
+                    <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'show' : ''}`} style={{ minWidth: '320px', padding: '0.8rem 0' }}>
+                        <li onClick={closeMenu}><Link to="/service#service-01">A/C Motor Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-02">D/C Motors Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-03">LT Motors Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-04">HT Motors Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-05">WTG Generator Coil Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-06">WTG Up Tower Generator Servicing</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-07">WTG Up Tower Patch Work</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-08">Pitch Motors, Brake Coil & Oil Pumps</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-09">WTG Slip Ring Servicing</Link></li>
+                        <li onClick={closeMenu}><Link to="/service#service-10">Centrifugal Water Pumps Servicing</Link></li>
                     </ul>
                 </li>
 
