@@ -1,124 +1,135 @@
+import { Link } from 'react-router-dom';
 import { Wrench, Hammer, ShieldCheck, Activity, Navigation, ArrowRight, Settings, ClipboardCheck } from 'lucide-react';
 
 const Service = () => {
     const services = [
         {
             num: "01",
+            slug: "ac-motor-servicing",
             title: "A/C Motor Servicing & Rewinding",
             subtitle: "AC Electrical Motors",
             desc: "Comprehensive servicing, stator rewinding, bearing replacement, and dynamic testing for single-phase and three-phase AC industrial motors.",
             icon: <Wrench size={40} />,
-            image: "motor_rewinding.jpg",
+            image: "services/ac_motor.jpg",
             tags: ["A/C Motor Rewinding", "Stator Overhaul", "Insulation Resistance Test"],
-            link: "/contact",
+            link: "/service/ac-motor-servicing",
             delay: "0s",
             meta: { location: "Tumakuru Workshop", tech: "Winding Baking Oven", status: "Operational" }
         },
         {
             num: "02",
+            slug: "dc-motor-servicing",
             title: "D/C Motors Servicing & Rewinding",
             subtitle: "DC Electrical Motors",
             desc: "Precision armature rewinding, commutator turning & undercutting, brush replacement, and field coil servicing for DC motors.",
             icon: <Hammer size={40} />,
-            image: "electrical_workshop.jpg",
+            image: "services/dc_motor.jpg",
             tags: ["D/C Motor Servicing", "Armature Rewinding", "Commutator Repair"],
-            link: "/contact",
+            link: "/service/dc-motor-servicing",
             delay: "0.1s",
             meta: { location: "Tumakuru Workshop", tech: "Coil Winding Machine", status: "Operational" }
         },
         {
             num: "03",
+            slug: "lt-motor-servicing",
             title: "LT Motors Servicing & Rewinding",
             subtitle: "Low Tension Motors",
             desc: "Complete maintenance, rewinding, and overhauling for Low Tension (LT) industrial motors up to 415V.",
             icon: <Activity size={40} />,
-            image: "service1.jpg",
+            image: "services/lt_motor.jpg",
             tags: ["LT Motors", "Coil Rewinding", "Varnish Impregnation"],
-            link: "/contact",
+            link: "/service/lt-motor-servicing",
             delay: "0.2s",
             meta: { location: "Industrial Site", tech: "Surge Meter Test", status: "Certified" }
         },
         {
             num: "04",
+            slug: "ht-motor-servicing",
             title: "HT Motors Servicing & Rewinding",
             subtitle: "High Tension Motors",
             desc: "Specialized high-tension motor servicing, coil rewinding, and dielectric strength testing backed by 11Kv & 3Kv High Voltage Test Kit.",
             icon: <ShieldCheck size={40} />,
-            image: "service2.png",
+            image: "services/ht_motor.jpg",
             tags: ["HT Motors", "11Kv & 3Kv Test Kit", "HV Coil Rewinding"],
-            link: "/contact",
+            link: "/service/ht-motor-servicing",
             delay: "0.3s",
             meta: { location: "Industrial Site", tech: "11Kv & 3Kv High Voltage Test Kit", status: "Certified" }
         },
         {
             num: "05",
+            slug: "wtg-generator-coil-rewinding",
             title: "Wind Turbine Generator Coil Rewinding",
             subtitle: "Wind Energy Solutions",
             desc: "High thermal endurance coil rewinding for wind turbine generators ensuring maximum efficiency and reliability.",
             icon: <Navigation size={40} />,
-            image: "electrical_workshop.jpg",
+            image: "services/wtg_generator.jpg",
             tags: ["WTG Generator", "Coil Rewinding", "Class H Insulation"],
-            link: "/contact",
+            link: "/service/wtg-generator-coil-rewinding",
             delay: "0.4s",
             meta: { location: "Wind Farm Site", tech: "GWO Trained Staff", status: "Active On-Site" }
         },
         {
             num: "06",
+            slug: "wtg-up-tower-generator-servicing",
             title: "Wind Turbine Up Tower Generator Servicing",
             subtitle: "On-Site Maintenance",
             desc: "Specialized on-site up-tower generator servicing, bearing replacement, alignment, and diagnostic testing.",
             icon: <Wrench size={40} />,
-            image: "service4.jpg",
+            image: "services/wtg_uptower.jpg",
             tags: ["Up Tower Servicing", "WTG Generator", "Bearing Alignment"],
-            link: "/contact",
+            link: "/service/wtg-up-tower-generator-servicing",
             delay: "0.5s",
             meta: { location: "Turbine Nacelle", tech: "GWO Certified Team", status: "Field Active" }
         },
         {
             num: "07",
+            slug: "wtg-up-tower-patch-work",
             title: "Wind Turbine Up Tower Generator Patch Work",
             subtitle: "Emergency Generator Patch Work",
             desc: "In-situ coil patch work and emergency electrical repairs inside the nacelle without lowering the generator.",
             icon: <Hammer size={40} />,
-            image: "service1.jpg",
+            image: "services/wtg_patchwork.jpg",
             tags: ["Generator Patch Work", "In-Situ Repairs", "Downtime Reduction"],
-            link: "/contact",
+            link: "/service/wtg-up-tower-patch-work",
             delay: "0.6s",
             meta: { location: "Turbine Nacelle", tech: "On-Site Patch Kits", status: "Active Site" }
         },
         {
             num: "08",
+            slug: "pitch-motors-brake-coil-oil-pumps",
             title: "Wind Turbine Pitch Motors, Brake Coil, Oil Pumps Motors Servicing & Rewinding",
             subtitle: "Turbine Auxiliary Motors",
             desc: "Complete servicing and rewinding for turbine pitch motors, electromagnetic brake coils, and hydraulic oil pump motors.",
             icon: <Settings size={40} />,
-            image: "motor_rewinding.jpg",
+            image: "services/pitch_motor.jpg",
             tags: ["Pitch Motors", "Brake Coil", "Oil Pumps Motors"],
-            link: "/contact",
+            link: "/service/pitch-motors-brake-coil-oil-pumps",
             delay: "0.7s",
             meta: { location: "Service Center", tech: "Resistance Meter & Tachometer", status: "Tested" }
         },
         {
             num: "09",
+            slug: "wtg-slip-ring-servicing",
             title: "Wind Turbine Slip Ring Servicing",
             subtitle: "Electrical Power Transfer",
             desc: "Slip ring surface cleaning, brush gear inspection, insulation resistance testing, and contact ring re-surfacing.",
             icon: <Activity size={40} />,
-            image: "electrical_workshop.jpg",
+            image: "services/slip_ring.jpg",
             tags: ["Slip Ring Servicing", "Brush Gear Alignment", "Contact Ring Cleaning"],
-            link: "/contact",
+            link: "/service/wtg-slip-ring-servicing",
             delay: "0.8s",
             meta: { location: "Wind Farm Site", tech: "Tachometer & Multimeter", status: "Tested" }
         },
         {
             num: "10",
+            slug: "centrifugal-water-pumps-servicing",
             title: "Centrifugal Water Pumps Servicing",
             subtitle: "Industrial Water Pumps",
             desc: "Heavy-duty industrial centrifugal pump overhaul, impeller alignment, dynamic balancing, seal replacement, and motor rewinding.",
             icon: <ClipboardCheck size={40} />,
-            image: "service4.jpg",
+            image: "services/water_pump.jpg",
             tags: ["Water Pumps Servicing", "Impeller Alignment", "Mechanical Seals"],
-            link: "/contact",
+            link: "/service/centrifugal-water-pumps-servicing",
             delay: "0.9s",
             meta: { location: "Service Center", tech: "Bearing Induction Heater", status: "Operational" }
         }
@@ -148,7 +159,7 @@ const Service = () => {
                     <section key={idx} className={`service-row ${idx % 2 !== 0 ? 'row-reverse' : ''}`} id={`service-${item.num}`}>
                         <div className="service-image-side" data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}>
                             <div className="parallax-img-box">
-                                <img src={item.image} alt={item.title} className="service-main-img" />
+                                <img src={`${import.meta.env.BASE_URL}${item.image.replace(/^\//, '')}`} alt={item.title} className="service-main-img" />
                                 <div className="tech-meta-badge">
                                     <div className="meta-item">
                                         <span className="meta-label">Deployment Site</span>
@@ -180,9 +191,9 @@ const Service = () => {
                             </div>
 
                             {item.link && (
-                                <a href={item.link} className="btn-service">
+                                <Link to={item.link} className="btn-service">
                                     Service Details <ArrowRight size={18} />
-                                </a>
+                                </Link>
                             )}
                         </div>
                     </section>

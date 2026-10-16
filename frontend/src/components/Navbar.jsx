@@ -43,16 +43,16 @@ const Navbar = () => {
                         Services <ChevronDown size={12} strokeWidth={3} className={activeDropdown === 'services' ? 'rotate' : ''} />
                     </Link>
                     <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'show' : ''}`} style={{ minWidth: '320px', padding: '0.8rem 0' }}>
-                        <li onClick={closeMenu}><Link to="/service#service-01">A/C Motor Servicing & Rewinding</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-02">D/C Motors Servicing & Rewinding</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-03">LT Motors Servicing & Rewinding</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-04">HT Motors Servicing & Rewinding</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-05">WTG Generator Coil Rewinding</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-06">WTG Up Tower Generator Servicing</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-07">WTG Up Tower Patch Work</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-08">Pitch Motors, Brake Coil & Oil Pumps</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-09">WTG Slip Ring Servicing</Link></li>
-                        <li onClick={closeMenu}><Link to="/service#service-10">Centrifugal Water Pumps Servicing</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/ac-motor-servicing">A/C Motor Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/dc-motor-servicing">D/C Motors Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/lt-motor-servicing">LT Motors Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/ht-motor-servicing">HT Motors Servicing & Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/wtg-generator-coil-rewinding">WTG Generator Coil Rewinding</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/wtg-up-tower-generator-servicing">WTG Up Tower Generator Servicing</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/wtg-up-tower-patch-work">WTG Up Tower Patch Work</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/pitch-motors-brake-coil-oil-pumps">Pitch Motors, Brake Coil & Oil Pumps</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/wtg-slip-ring-servicing">WTG Slip Ring Servicing</Link></li>
+                        <li onClick={closeMenu}><Link to="/service/centrifugal-water-pumps-servicing">Centrifugal Water Pumps Servicing</Link></li>
                     </ul>
                 </li>
 

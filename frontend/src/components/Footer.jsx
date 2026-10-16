@@ -31,11 +31,11 @@ const Footer = () => {
                 <div>
                     <h4 style={{ marginBottom: '1rem', fontWeight: 800, color: 'white', fontSize: '1.05rem' }}>Our Core Services</h4>
                     <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.88rem' }}>
-                        <li><Link to="/service" className="footer-link">A/C & D/C Motor Servicing & Rewinding</Link></li>
-                        <li><Link to="/service" className="footer-link">LT & HT Motors Servicing & Rewinding</Link></li>
-                        <li><Link to="/service" className="footer-link">Wind Turbine Generator Coil Rewinding</Link></li>
-                        <li><Link to="/service" className="footer-link">Up Tower Generator Servicing & Patch Work</Link></li>
-                        <li><Link to="/service" className="footer-link">Pitch Motors, Brake Coil & Slip Ring Servicing</Link></li>
+                        <li><Link to="/service/ac-motor-servicing" className="footer-link">A/C & D/C Motor Servicing & Rewinding</Link></li>
+                        <li><Link to="/service/lt-motor-servicing" className="footer-link">LT & HT Motors Servicing & Rewinding</Link></li>
+                        <li><Link to="/service/wtg-generator-coil-rewinding" className="footer-link">Wind Turbine Generator Coil Rewinding</Link></li>
+                        <li><Link to="/service/wtg-up-tower-generator-servicing" className="footer-link">Up Tower Generator Servicing</Link></li>
+                        <li><Link to="/service/pitch-motors-brake-coil-oil-pumps" className="footer-link">Pitch Motors, Brake Coil & Slip Ring</Link></li>
                     </ul>
                 </div>
 
