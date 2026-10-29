@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2, Target, Eye, Code, TrendingUp, Cpu, Monitor, Zap, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -19,14 +20,14 @@ const About = () => {
                         </p>
                         <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
                             <a href="#about" className="btn btn-primary">Our Overview <ArrowRight size={20} /></a>
-                            <a href="/contact" className="btn btn-outline">Contact Us</a>
+                            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
                         </div>
                     </div>
 
                     <div className="hero-image-v2" data-aos="fade-left" style={{ transitionDelay: '0.2s' }}>
                         <div className="glass-container">
                             <img
-                                src="service1.jpg"
+                                src={`${import.meta.env.BASE_URL}service1.jpg`}
                                 alt="ElectroMechanical Workshop"
                                 className="floating-img"
                             />
@@ -240,9 +241,9 @@ const About = () => {
                     <p style={{ fontSize: '1.15rem', marginBottom: '2.5rem', color: 'var(--text-muted)', position: 'relative' }}>
                         Contact Sri Manjunatha Electrical Service today for consultations, testing, and emergency repairs.
                     </p>
-                    <a href="/contact" className="btn btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.1rem', position: 'relative' }}>
+                    <Link to="/contact" className="btn btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.1rem', position: 'relative' }}>
                         Contact Us Now <ArrowRight size={22} />
-                    </a>
+                    </Link>
                 </div>
             </section>
         </main>

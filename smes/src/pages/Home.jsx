@@ -99,7 +99,7 @@ const Home = () => {
                     <div className="hero-image-v2" data-aos="fade-left" style={{ transitionDelay: '0.2s' }}>
                         <div className="glass-container" style={{ padding: '1rem', border: '1px solid var(--border)', borderRadius: '40px' }}>
                             <img
-                                src="electrical_workshop.jpg"
+                                src={`${import.meta.env.BASE_URL}electrical_workshop.jpg`}
                                 alt="Electrical Service Workshop"
                                 className="floating-img"
                                 style={{ borderRadius: '30px', width: '100%' }}
@@ -156,84 +156,84 @@ const Home = () => {
                     <div className="card" data-aos="fade-up" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: '4px solid var(--primary)', transition: 'transform 0.3s ease' }}>
                         <div>
                             <div style={{ width: '100%', height: '180px', borderRadius: '15px', overflow: 'hidden', marginBottom: '1.5rem' }}>
-                                <img src="motor_rewinding.jpg" alt="A/C & D/C Motor Servicing" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}motor_rewinding.jpg`} alt="A/C & D/C Motor Servicing" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>A/C & D/C Motor Rewinding</h3>
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.98rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                                 Complete overhauling, precision coil rewinding, stator and rotor repairs for all types of A/C & D/C industrial motors.
                             </p>
                         </div>
-                        <Link to="/service" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
+                        <Link to="/service/ac-motor-servicing" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
                     </div>
 
                     {/* Card 2 */}
                     <div className="card" data-aos="fade-up" data-aos-delay="100" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: '4px solid var(--secondary)', transition: 'transform 0.3s ease' }}>
                         <div>
                             <div style={{ width: '100%', height: '180px', borderRadius: '15px', overflow: 'hidden', marginBottom: '1.5rem' }}>
-                                <img src="service2.png" alt="LT & HT Motors Servicing" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}service2.png`} alt="LT & HT Motors Servicing" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>LT & HT Motors Servicing</h3>
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.98rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                                 High-tension & Low-tension motor maintenance backed by 11Kv & 3Kv High Voltage Test Kit inspection.
                             </p>
                         </div>
-                        <Link to="/service" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
+                        <Link to="/service/lt-motor-servicing" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
                     </div>
 
                     {/* Card 3 */}
                     <div className="card" data-aos="fade-up" data-aos-delay="200" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: '4px solid var(--accent)', transition: 'transform 0.3s ease' }}>
                         <div>
                             <div style={{ width: '100%', height: '180px', borderRadius: '15px', overflow: 'hidden', marginBottom: '1.5rem' }}>
-                                <img src="electrical_workshop.jpg" alt="Wind Turbine Generator Coil Rewinding" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}electrical_workshop.jpg`} alt="Wind Turbine Generator Coil Rewinding" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Generator Coil Rewinding</h3>
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.98rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                                 Wind turbine generator coil rewinding with high thermal endurance insulation and quality testing.
                             </p>
                         </div>
-                        <Link to="/service" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
+                        <Link to="/service/wtg-generator-coil-rewinding" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
                     </div>
 
                     {/* Card 4 */}
                     <div className="card" data-aos="fade-up" data-aos-delay="300" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: '4px solid var(--primary)', transition: 'transform 0.3s ease' }}>
                         <div>
                             <div style={{ width: '100%', height: '180px', borderRadius: '15px', overflow: 'hidden', marginBottom: '1.5rem' }}>
-                                <img src="service1.jpg" alt="Up Tower Generator Patch Work" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}service1.jpg`} alt="Up Tower Generator Patch Work" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Up Tower Generator Servicing</h3>
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.98rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                                 Specialized up-tower generator servicing and patch work restoring turbine operational efficiency.
                             </p>
                         </div>
-                        <Link to="/service" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
+                        <Link to="/service/wtg-up-tower-generator-servicing" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
                     </div>
 
                     {/* Card 5 */}
                     <div className="card" data-aos="fade-up" data-aos-delay="400" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: '4px solid var(--secondary)', transition: 'transform 0.3s ease' }}>
                         <div>
                             <div style={{ width: '100%', height: '180px', borderRadius: '15px', overflow: 'hidden', marginBottom: '1.5rem' }}>
-                                <img src="service4.jpg" alt="Pitch Motors & Brake Coil" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}service4.jpg`} alt="Pitch Motors & Brake Coil" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Pitch Motors, Brake Coil & Oil Pumps</h3>
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.98rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                                 Precision servicing for pitch motors, electromagnetic brake coils, and oil pumps motor rewinding.
                             </p>
                         </div>
-                        <Link to="/service" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
+                        <Link to="/service/pitch-motors-brake-coil-oil-pumps" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
                     </div>
 
                     {/* Card 6 */}
                     <div className="card" data-aos="fade-up" data-aos-delay="500" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', borderTop: '4px solid var(--accent)', transition: 'transform 0.3s ease' }}>
                         <div>
                             <div style={{ width: '100%', height: '180px', borderRadius: '15px', overflow: 'hidden', marginBottom: '1.5rem' }}>
-                                <img src="motor_rewinding.jpg" alt="Centrifugal Water Pumps Servicing" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}motor_rewinding.jpg`} alt="Centrifugal Water Pumps Servicing" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '1rem' }}>Centrifugal Water Pumps & Slip Ring</h3>
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.98rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>
                                 Heavy-duty centrifugal water pump overhaul, impeller alignment, and turbine slip ring servicing.
                             </p>
                         </div>
-                        <Link to="/service" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
+                        <Link to="/service/centrifugal-water-pumps-servicing" className="btn btn-outline" style={{ width: '100%', textAlign: 'center' }}>Learn More</Link>
                     </div>
 
                 </div>
