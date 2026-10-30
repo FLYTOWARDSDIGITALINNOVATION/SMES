@@ -21,15 +21,9 @@ function App() {
         });
     }, []);
 
-    const hostname = window.location.hostname;
-    const basename = (
-        hostname.includes('srimanjunatha') || 
-        hostname.includes('sanjuwindenergy') || 
-        hostname === 'localhost' || 
-        hostname === '127.0.0.1'
-    ) 
-        ? '' 
-        : '/projects/wind';
+    const basename = window.location.pathname.startsWith('/projects/wind') 
+        ? '/projects/wind' 
+        : '';
 
     return (
         <Router basename={basename}>
